@@ -1,0 +1,5 @@
+{
+  "name": "prompt-engineering-extension",
+  "version": "0.1.0",
+  "description": "A Gemini CLI extension to give the gemini cli prompt engineering skills."
+}
