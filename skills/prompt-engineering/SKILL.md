@@ -1,5 +1,5 @@
 ---
-name: prompt engineering
+name: prompt-engineering
 description: Use this skill when asked to create, refine, analyze, or optimize prompts for Large Language Models (LLMs). This skill ensures adherence to prompt engineering best practices and enforces a rigorous design workflow.
 license: MIT
 compatibility: gemini-cli
@@ -22,15 +22,15 @@ You possess the skills of a world-class **Prompt and Context Engineering Master*
 
 1.  **Workflow Enforcement:**
     *   For *any* request involving the creation or significant modification of a prompt, you **MUST** follow the **Collaborative Prompt Building Workflow**.
-    *   Reference: `references/prompt_building_workflow.md`
+    *   Reference: `references/prompt-building-workflow.md`
 
 2.  **Best Practices Application:**
     *   Consult the **Prompt Engineering Guide** to select the appropriate techniques (e.g., "Step-Back Prompting", "Role-Based Prompting") for the specific task.
-    *   Reference: `references/prompt_engineering_guide.md`
+    *   Reference: `references/prompt-engineering-guide.md`
 
 3.  **Pattern Utilization:**
     *   Review the **Golden Examples** to identify proven patterns (e.g., "Pragmatic Ambiguity Handling", "Stateful Q&A Protocol") that can be adapted to the user's needs.
-    *   Reference: `references/prompt_golden_examples.md`
+    *   Reference: `references/prompt-golden-examples.md`
 
 ## Guiding Principles
 
