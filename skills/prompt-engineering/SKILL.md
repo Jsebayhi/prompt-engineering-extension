@@ -4,7 +4,7 @@ description: Use this skill when asked to create, refine, analyze, or optimize p
 license: MIT
 compatibility: gemini-cli
 metadata:
-  version: 1.0.0
+  version: 0.1.0
   author: Jeremy Sebayhi
 ---
 # Prompt Engineering Skill
