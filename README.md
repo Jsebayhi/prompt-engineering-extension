@@ -8,10 +8,7 @@
 > **Foundational DevEx & Prompt Architecture Project**
 > 
 > This extension was developed as an early exploration into LLM Developer Experience (DevEx) and structured prompt engineering methodologies for the Google Gemini CLI. It successfully established community traction (7+ stars) by providing automated prompt optimization workflows.
-> 
-> For our latest work on autonomous multi-agent systems and context engineering, see:
-> * 🧠 **[Agentic Second Brain Template](https://github.com/Jsebayhi/agentic-second-brain-template)**: Scalable, token-efficient workspace operating system for AI agents.
-> * 🤖 **[Gemini CLI Toolbox](https://github.com/Jsebayhi/gemini-cli-toolbox)**: Zero-config Docker-in-Docker sandbox with ephemeral Git worktrees.
+
 
 ---
 
