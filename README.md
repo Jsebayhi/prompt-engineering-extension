@@ -1,41 +1,95 @@
-# Prompt Engineering Extension for Gemini CLI
+# 🎯 Prompt Engineering Extension for Gemini CLI
 
-The **Prompt Engineering Extension** equips your Gemini CLI agent with world-class prompt engineering expertise. It provides a specialized skill designed to help you craft, optimize, and refine high-quality prompts for Large Language Models (LLMs).
+[![GitHub Stars](https://img.shields.io/github/stars/Jsebayhi/prompt-engineering-extension?style=flat-square&color=gold)](https://github.com/Jsebayhi/prompt-engineering-extension/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+[![Gemini CLI](https://img.shields.io/badge/Gemini%20CLI-Compatible%20Extension-4285F4?style=flat-square)](https://github.com/GoogleCloudPlatform/gemini-cli)
 
-## Features
+> [!NOTE]
+> **Foundational DevEx & Prompt Architecture Project**
+> 
+> This extension was developed as an early exploration into LLM Developer Experience (DevEx) and structured prompt engineering methodologies for the Google Gemini CLI. It successfully established community traction (7+ stars) by providing automated prompt optimization workflows.
+> 
+> For our latest work on autonomous multi-agent systems and context engineering, see:
+> * 🧠 **[Agentic Second Brain Template](https://github.com/Jsebayhi/agentic-second-brain-template)**: Scalable, token-efficient workspace operating system for AI agents.
+> * 🤖 **[Gemini CLI Toolbox](https://github.com/Jsebayhi/gemini-cli-toolbox)**: Zero-config Docker-in-Docker sandbox with ephemeral Git worktrees.
 
-This extension adds the **Prompt Engineering** skill to your agent, enabling it to:
+---
 
-*   **Master Prompt Design:** Apply advanced methodologies like Chain of Thought (CoT), Tree of Thoughts (ToT), and the PCTR framework.
-*   **Adversarial Hardening:** Proactively identify and fix potential flaws, loopholes, and ambiguities in your prompts.
-*   **Best Practices:** Ground every suggestion in proven prompt engineering techniques.
-*   **Efficiency:** Use structured workflows to build effective prompts faster.
+## 💡 Overview & Value Proposition
 
-## Installation
+Crafting high-precision prompts for Large Language Models requires systematic rigor: establishing role definitions, scoping context, constraining output formats, and anticipating adversarial edge cases.
 
-To install this extension, navigate to the directory where you want to clone the repository and run:
+The **Prompt Engineering Extension** integrates directly into the [Gemini CLI](https://github.com/GoogleCloudPlatform/gemini-cli) to automate this process. It acts as an embedded prompt architect that transforms vague, natural-language requirements into structured, robust, and hallucination-resistant prompts.
 
+---
+
+## 🛠️ Core Engineering Frameworks
+
+The extension encapsulates proven prompt design patterns into automated agent instructions:
+
+### 1. The PCTR Framework
+Ensures every prompt follows an unambiguous four-pillar structure:
+* **Persona:** Precise role definition, domain expertise, and behavioral boundaries.
+* **Context:** Necessary background data, constraints, and assumptions.
+* **Task:** Granular, single-responsibility objective with clear success criteria.
+* **Requirements:** Strict formatting, tone, output schema (e.g., JSON/Markdown), and negative constraints.
+
+### 2. Multi-Step Reasoning Strategies
+* **Chain of Thought (CoT):** Dynamically injects step-by-step reasoning scaffolds for complex deductive problems.
+* **Tree of Thoughts (ToT):** Guides the model through branching exploration paths to evaluate multiple trade-offs before finalizing decisions.
+
+### 3. Adversarial Hardening
+* **Loophole Detection:** Scans user prompts for underspecified requirements, ambiguities, and potential leakage vectors.
+* **Constraint Enforcement:** Injects explicit negative guardrails to prevent hallucination, prompt injection, and unwanted verbosity.
+
+---
+
+## 🚀 Quickstart & Installation
+
+### Prerequisites
+* [Gemini CLI](https://github.com/GoogleCloudPlatform/gemini-cli) installed and authenticated.
+
+### Install Extension
+Run the following command in your terminal:
+
+```bash
+gemini extension install https://github.com/Jsebayhi/prompt-engineering-extension.git
+```
+
+*Alternative (GitLab Mirror):*
 ```bash
 gemini extension install https://gitlab.com/jeremy-sebayhi-public-work/gemini-cli/prompt-engineering-extension.git
 ```
 
-*Note: Ensure you have the [Gemini CLI](https://github.com/GoogleCloudPlatform/gemini-cli) installed and configured.*
+---
 
-## Usage
+## 📋 Example Workflows
 
-Once installed, the agent will automatically utilize the **Prompt Engineering** skill whenever you ask for help with creating or improving prompts.
+Once installed, the Gemini CLI agent automatically activates the prompt engineering skill whenever prompt optimization, system instructions, or refinement requests are detected:
 
-**Example Requests:**
+### Scenario A: Drafting Production System Prompts
+```text
+> "Help me build a production system prompt for a triage agent managing Kafka consumer group lag alerts."
+```
+* **Output:** Generates a complete PCTR-structured prompt with JSON schema constraints, escalation criteria, and token-saving rules.
 
-*   "Help me write a system prompt for a customer support bot."
-*   "Refine this prompt to make it less verbose and more precise."
-*   "Analyze this prompt for potential loop holes."
-*   "Design a prompt using the Chain of Thought technique for a complex reasoning task."
+### Scenario B: Prompt Hardening & Loophole Analysis
+```text
+> "Review this customer support prompt and harden it against user jailbreaks and out-of-scope queries."
+```
+* **Output:** Delivers a vulnerability report and a drop-in replacement prompt incorporating strict negative constraints and fallback behavior.
 
-## Contributing
+---
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## 🏛️ Extension Architecture
 
-## License
+This project implements the official Gemini CLI extension specification:
+* `gemini-extension.json`: Defines the extension manifest, metadata, and skill entry points.
+* `skills/prompt-engineering/`: Contains modular domain knowledge files and prompt templates injected during contextual activation.
+* `commands/`: CLI command bindings and helper utilities.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
+
+## 📄 License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.
