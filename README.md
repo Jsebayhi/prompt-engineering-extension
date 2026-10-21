@@ -5,9 +5,10 @@
 [![Gemini CLI](https://img.shields.io/badge/Gemini%20CLI-Compatible%20Extension-4285F4?style=flat-square)](https://github.com/GoogleCloudPlatform/gemini-cli)
 
 > [!NOTE]
-> **Foundational DevEx & Prompt Architecture Project**
+> **Foundational DevEx & Prompt Architecture Exploration**
 > 
-> This extension was developed as an early exploration into LLM Developer Experience (DevEx) and structured prompt engineering methodologies for the Google Gemini CLI. It successfully established community traction (7+ stars) by providing automated prompt optimization workflows.
+> This extension was developed as an exploratory project investigating structured prompt engineering methodologies (PCTR, Chain-of-Thought, adversarial guardrails) and early extension patterns for the Google Gemini CLI.
+
 
 
 ---
